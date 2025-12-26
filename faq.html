@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:#f7f7f7;
+      color:#222;
+    }
+    .container{max-width:900px; margin:0 auto; padding:24px;}
+    nav{
+      display:flex; gap:16px; flex-wrap:wrap;
+      border-bottom:1px solid #ddd;
+      padding-bottom:12px; margin-bottom:24px;
+    }
+    nav a{ text-decoration:none; color:#444; font-weight:600; }
+    nav a:hover{ text-decoration:underline; }
+
+    h1{font-size:32px; margin:0 0 6px;}
+    .subtitle{color:#666; margin:0 0 18px;}
+
+    .card{
+      background:white;
+      border:1px solid #ddd;
+      border-radius:12px;
+      padding:16px;
+      margin-bottom:14px;
+    }
+    .label{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:#777;
+      margin-bottom:10px;
+    }
+
+    details{
+      border-top:1px solid #eee;
+      padding:12px 0;
+    }
+    details:first-of-type{border-top:none;}
+    summary{
+      cursor:pointer;
+      font-weight:800;
+      list-style:none;
+    }
+    summary::-webkit-details-marker{display:none;}
+    .answer{
+      margin-top:8px;
+      color:#444;
+      line-height:1.45;
+    }
+    .tiny{color:#666; font-size:14px;}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="travel.html">Travel</a>
+      <a href="faq.html">FAQ</a>
+      <a href="rsvp.html">RSVP</a>
+    </nav>
+
+    <h1>FAQ</h1>
+    <p class="subtitle">If you have a question, it’s probably here 🙂</p>
+
+    <div class="card">
+      <div class="label">Basics</div>
+
+      <details open>
+        <summary>What time should I arrive?</summary>
+        <div class="answer">
+          Please arrive <strong>20–30 minutes early</strong> for parking + walking + seating.
+          Check the <a href="schedule.html">Schedule</a> page for “arrive by” times.
+        </div>
+      </details>
+
+      <details>
+        <summary>What’s the dress code?</summary>
+        <div class="answer">
+          Dress code: <strong>____________________</strong><br/>
+          Mountain note: evenings can get chilly — layers are smart.
+        </div>
+      </details>
+
+      <details>
+        <summary>Is this wedding indoors or outdoors?</summary>
+        <div class="answer">
+          Ceremony: ____________________ <br/>
+          Reception: ____________________
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I bring a plus-one?</summary>
+        <div class="answer">
+          If your invitation/RSVP form includes a guest, yes. Otherwise, please come solo.
+        </div>
+      </details>
+
+      <details>
+        <summary>Are kids invited?</summary>
+        <div class="answer">
+          ____________________ (Example: “Adults-only ceremony + reception.”)
+        </div>
+      </details>
+    </div>
+
+    <div class="card">
+      <div class="label">Travel + Logistics</div>
+
+      <details>
+        <summary>Where do I park?</summary>
+        <div class="answer">
+          Parking: ____________________ <br/>
+          Walk time: ________ <br/>
+          Accessibility notes: ____________________
+        </div>
+      </details>
+
+      <details>
+        <summary>Will there be cell service?</summary>
+        <div class="answer">
+          Service may be spotty. We recommend downloading maps ahead of time.
+          See the <a href="travel.html">Travel</a> page for tips.
+        </div>
+      </details>
+
+      <details>
+        <summary>What if the weather is bad?</summary>
+        <div class="answer">
+          We’ll update the website if plans change. If weather is questionable, plan extra driving time and bring layers.
+        </div>
+      </details>
+    </div>
+
+    <div class="card">
+      <div class="label">RSVP + Food</div>
+
+      <details>
+        <summary>When is the RSVP deadline?</summary>
+        <div class="answer">
+          RSVP by: <strong>____________________</strong><br/>
+          RSVP here: <a href="rsvp.html">RSVP Page</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I change my RSVP?</summary>
+        <div class="answer">
+          Yes — just submit the RSVP form again, or contact the couple.
+        </div>
+      </details>
+
+      <details>
+        <summary>What about dietary restrictions?</summary>
+        <div class="answer">
+          Please include dietary restrictions in the RSVP form.
+        </div>
+      </details>
+    </div>
+
+    <div class="card">
+      <div class="label">Gifts + Photos</div>
+
+      <details>
+        <summary>Is there a registry?</summary>
+        <div class="answer">
+          ____________________ (Optional: link registry here later.)
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I take photos during the ceremony?</summary>
+        <div class="answer">
+          Please keep phones put away during the ceremony unless the couple says otherwise.
+        </div>
+      </details>
+
+      <div class="tiny" style="margin-top:8px">
+        Still unsure? Check <a href="travel.html">Travel</a> and <a href="schedule.html">Schedule</a> first — then text the couple.
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
