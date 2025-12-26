@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:#f7f7f7;
+      color:#222;
+    }
+    .container{max-width:900px; margin:0 auto; padding:24px;}
+    nav{
+      display:flex; gap:16px; flex-wrap:wrap;
+      border-bottom:1px solid #ddd;
+      padding-bottom:12px; margin-bottom:24px;
+    }
+    nav a{ text-decoration:none; color:#444; font-weight:600; }
+    nav a:hover{ text-decoration:underline; }
+
+    h1{font-size:32px; margin:0 0 6px;}
+    .subtitle{color:#666; margin:0 0 18px;}
+
+    .card{
+      background:white;
+      border:1px solid #ddd;
+      border-radius:12px;
+      padding:16px;
+      margin-bottom:14px;
+    }
+    .label{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:#777;
+      margin-bottom:10px;
+    }
+    .muted{color:#666; font-size:14px; line-height:1.45;}
+    .row{
+      display:grid;
+      grid-template-columns: 140px 1fr;
+      gap:12px;
+      padding:10px 0;
+      border-top:1px solid #eee;
+    }
+    .row:first-of-type{border-top:none;}
+    .left{font-weight:900;}
+    .note{color:#666; font-size:14px; margin-top:4px; line-height:1.35;}
+
+    ul{margin:8px 0 0 18px; color:#444;}
+    li{margin:6px 0;}
+    .pill{
+      display:inline-block;
+      font-size:12px;
+      font-weight:800;
+      padding:4px 10px;
+      border:1px solid #ddd;
+      border-radius:999px;
+      color:#444;
+      background:#fafafa;
+      margin-left:8px;
+      white-space:nowrap;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:10px;
+      padding:10px 14px;
+      background:#222;
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="travel.html">Travel</a>
+      <a href="faq.html">FAQ</a>
+      <a href="rsvp.html">RSVP</a>
+      <a href="don'tforget.html">Don'tForget</a>
+    </nav>
+
+    <h1>Travel</h1>
+    <p class="subtitle">Everything you need to get here without stress.</p>
+
+    <div class="card">
+      <div class="label">Lodging</div>
+
+      <div class="row">
+        <div class="left">Hotel block</div>
+        <div>
+          <div><strong>Hotel Name</strong> <span class="pill">optional</span></div>
+          <div class="note">Address: ____________________</div>
+          <div class="note">Booking link / code: ____________________</div>
+          <div class="note">Deadline to book: ____________________</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">Other options</div>
+        <div class="note">
+          Airbnb / cabins nearby: ____________________ <br/>
+          Recommended towns to stay in: ____________________
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Getting Here</div>
+
+      <div class="row">
+        <div class="left">Nearest airport</div>
+        <div class="note">
+          Airport: ____________________ <br/>
+          Typical drive time to venue: ________ <br/>
+          Car rental recommended? Yes / No
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">Driving notes</div>
+        <div class="note">
+          <ul>
+            <li><strong>Service may be spotty.</strong> Download maps before driving up.</li>
+            <li>Plan extra time for mountain roads + parking + walking.</li>
+            <li>If weather is questionable, leave earlier than you think.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Parking + Arrival</div>
+      <div class="muted">
+        <ul>
+          <li>Parking location: ____________________</li>
+          <li>Walk time from parking: ________</li>
+          <li>Accessibility notes: ____________________</li>
+          <li>Where to go when you arrive: ____________________</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Weather + What to Bring (mountain version)</div>
+      <div class="muted">
+        <ul>
+          <li>Layers — temps can drop fast after sunset.</li>
+          <li>Closed-toe shoes recommended if grass/gravel.</li>
+          <li>Sunglasses + sunscreen if outdoor ceremony.</li>
+          <li>Water bottle if you’ll be outside a while.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Maps Links</div>
+      <div class="muted">
+        Put your Google/Apple Maps links here (ceremony + reception + parking).<br/>
+        Ceremony map link: ____________________<br/>
+        Reception map link: ____________________<br/>
+        Parking map link: ____________________
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
