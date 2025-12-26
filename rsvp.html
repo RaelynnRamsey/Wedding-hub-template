@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSVP</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:#f7f7f7;
+      color:#222;
+    }
+    .container{max-width:900px; margin:0 auto; padding:24px;}
+    nav{
+      display:flex; gap:16px; flex-wrap:wrap;
+      border-bottom:1px solid #ddd;
+      padding-bottom:12px; margin-bottom:24px;
+    }
+    nav a{ text-decoration:none; color:#444; font-weight:600; }
+    nav a:hover{ text-decoration:underline; }
+
+    h1{font-size:32px; margin:0 0 6px;}
+    .subtitle{color:#666; margin:0 0 18px;}
+
+    .card{
+      background:white;
+      border:1px solid #ddd;
+      border-radius:12px;
+      padding:16px;
+      margin-bottom:14px;
+    }
+    .label{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:#777;
+      margin-bottom:10px;
+    }
+    .muted{color:#666; font-size:14px; line-height:1.45;}
+    iframe{
+      width:100%;
+      height:900px;
+      border:1px solid #eee;
+      border-radius:12px;
+      background:white;
+    }
+    code{
+      background:#f1f1f1;
+      padding:2px 6px;
+      border-radius:6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="travel.html">Travel</a>
+      <a href="faq.html">FAQ</a>
+      <a href="rsvp.html">RSVP</a>
+      <a href="don'tforget.html">Don'tForget</a>
+    </nav>
+
+    <h1>RSVP</h1>
+    <p class="subtitle">Please RSVP by <strong>____________________</strong></p>
+
+    <div class="card">
+      <div class="label">RSVP Form</div>
+      <p class="muted">
+        If the form doesn’t load, open it directly using the link below.
+      </p>
+
+      <!-- STEP 2 will replace the src="" with your Google Form embed link -->
+      <iframe src="" title="RSVP Form"></iframe>
+
+      <p class="muted" style="margin-top:12px">
+        Direct link (paste your form link here too): <br/>
+        <code>PASTE_GOOGLE_FORM_LINK_HERE</code>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
