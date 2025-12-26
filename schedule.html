@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Schedule</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:#f7f7f7;
+      color:#222;
+    }
+    .container{max-width:900px; margin:0 auto; padding:24px;}
+    nav{
+      display:flex; gap:16px; flex-wrap:wrap;
+      border-bottom:1px solid #ddd;
+      padding-bottom:12px; margin-bottom:24px;
+    }
+    nav a{ text-decoration:none; color:#444; font-weight:600; }
+    nav a:hover{ text-decoration:underline; }
+    h1{font-size:32px; margin:0 0 6px;}
+    .subtitle{color:#666; margin:0 0 18px;}
+    .card{
+      background:white;
+      border:1px solid #ddd;
+      border-radius:12px;
+      padding:16px;
+      margin-bottom:14px;
+    }
+    .label{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:#777;
+      margin-bottom:8px;
+    }
+    .row{
+      display:grid;
+      grid-template-columns: 92px 1fr;
+      gap:12px;
+      padding:10px 0;
+      border-top:1px solid #eee;
+    }
+    .row:first-of-type{border-top:none;}
+    .time{font-weight:800;}
+    .detail{color:#333;}
+    .note{color:#666; margin-top:4px; font-size:14px;}
+    .pill{
+      display:inline-block;
+      font-size:12px;
+      font-weight:700;
+      padding:4px 10px;
+      border:1px solid #ddd;
+      border-radius:999px;
+      color:#444;
+      background:#fafafa;
+      margin-left:8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="travel.html">Travel</a>
+      <a href="faq.html">FAQ</a>
+      <a href="rsvp.html">RSVP</a>
+    </nav>
+
+    <h1>Schedule</h1>
+    <p class="subtitle">Keep it simple. If you only read one page, read this one.</p>
+
+    <div class="card">
+      <div class="label">Wedding Day</div>
+
+      <div class="row">
+        <div class="time">9:00 AM</div>
+        <div class="detail">
+          Getting ready begins <span class="pill">Wedding party</span>
+          <div class="note">Location: ____________________</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">1:00 PM</div>
+        <div class="detail">
+          Details + first photos <span class="pill">Couple</span>
+          <div class="note">Bring: rings, invitation suite, vow books</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">3:30 PM</div>
+        <div class="detail">
+          Ceremony <span class="pill">All guests</span>
+          <div class="note">Arrive 20–30 min early for parking + seating</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">4:15 PM</div>
+        <div class="detail">
+          Family photos <span class="pill">Immediate family</span>
+          <div class="note">Meet at: ____________________</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">5:00 PM</div>
+        <div class="detail">
+          Cocktail hour <span class="pill">All guests</span>
+          <div class="note">Location: ____________________</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">6:00 PM</div>
+        <div class="detail">
+          Dinner + toasts <span class="pill">All guests</span>
+          <div class="note">If you’re giving a toast: find the DJ by 5:30</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">7:30 PM</div>
+        <div class="detail">
+          First dances <span class="pill">All guests</span>
+          <div class="note">After this, open dancing</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">10:00 PM</div>
+        <div class="detail">
+          Send-off / wrap-up <span class="pill">All guests</span>
+          <div class="note">Send-off plan: ____________________</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Weekend Extras (optional)</div>
+      <div class="row">
+        <div class="time">Fri</div>
+        <div class="detail">
+          Welcome / casual hang
+          <div class="note">Time + place: ____________________</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="time">Sat</div>
+        <div class="detail">
+          Rehearsal + dinner <span class="pill">Invite-only</span>
+          <div class="note">Time + place: ____________________</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="time">Sun</div>
+        <div class="detail">
+          Farewell coffee / brunch
+          <div class="note">Time + place: ____________________</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
