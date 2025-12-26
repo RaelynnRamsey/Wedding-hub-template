@@ -4,9 +4,130 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wedding Hub</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:#f7f7f7;
+      color:#222;
+    }
+    .container{
+      max-width:900px;
+      margin:0 auto;
+      padding:24px;
+    }
+    nav{
+      display:flex;
+      gap:16px;
+      border-bottom:1px solid #ddd;
+      padding-bottom:12px;
+      margin-bottom:24px;
+    }
+    nav a{
+      text-decoration:none;
+      color:#444;
+      font-weight:600;
+    }
+    nav a:hover{
+      text-decoration:underline;
+    }
+    h1{
+      font-size:36px;
+      margin-bottom:6px;
+    }
+    .subtitle{
+      color:#666;
+      margin-bottom:28px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    @media(min-width:700px){
+      .grid{ grid-template-columns:1fr 1fr; }
+    }
+    .card{
+      background:white;
+      border:1px solid #ddd;
+      border-radius:12px;
+      padding:16px;
+    }
+    .label{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:#777;
+      margin-bottom:6px;
+    }
+    .big{
+      font-size:18px;
+      font-weight:600;
+    }
+    .small{
+      color:#555;
+      margin-top:6px;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:12px;
+      padding:10px 14px;
+      background:#222;
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    footer{
+      margin-top:32px;
+      font-size:13px;
+      color:#777;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Wedding Hub</h1>
-  <p>If you can see this, your site is working 🎉</p>
+  <div class="container">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Schedule</a>
+      <a href="#">Travel</a>
+      <a href="#">FAQ</a>
+      <a href="#">RSVP</a>
+    </nav>
+
+    <h1>Couple Name</h1>
+    <div class="subtitle">Wedding Date • Location</div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="label">Ceremony</div>
+        <div class="big">Ceremony Location</div>
+        <div class="small">Time • Address</div>
+        <a class="btn" href="#">Open in Maps</a>
+      </div>
+
+      <div class="card">
+        <div class="label">Reception</div>
+        <div class="big">Reception Location</div>
+        <div class="small">Time • Address</div>
+        <a class="btn" href="#">Open in Maps</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div class="label">Dress Code</div>
+      <div class="big">Dress Code Here</div>
+      <div class="small" style="margin-top:12px">
+        RSVP by <strong>RSVP Deadline</strong>
+      </div>
+      <a class="btn" href="#">RSVP</a>
+    </div>
+
+    <footer>
+      Tip: save this site to your phone before the wedding in case service is spotty.
+    </footer>
+  </div>
 </body>
 </html>
